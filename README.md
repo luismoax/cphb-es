@@ -24,7 +24,7 @@ para controbuir en un proyecto desde la interfaz web de github), o simplemente e
 con la sección traducida, se añadiría el issue correspondiente y se dejaría registro de su
 contribución al hacer commit._
 
-* _Si detecta errores por favor hágalo saber por alguna vía, preferentemente abriendo un issue_
+* _Si detecta errores por favor hágalo saber por alguna vía, preferentemente abriendo un issue._
 
 * _Comparta este link con sus amigos de modo que crezca el número de colaboradores activos así como
-el número de entrenadores y estudiantes que usan el contenido traducido en sus entrenamientos_
+el número de entrenadores y estudiantes que usan el contenido traducido en sus entrenamientos._
