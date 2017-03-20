@@ -1,4 +1,4 @@
-﻿# cphb-es
+# cphb-es
 
 Competitive Programmer's Handbook (Spanish Translation)
 
