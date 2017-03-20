@@ -1,6 +1,6 @@
 # cphb-es
 
-Competitive Programmer's Handbook (Spanish Translation)
+## Competitive Programmer's Handbook (Spanish Translation)
 
 El propósito de este libro es dar al lector una introducción completa a la programación competitiva.
 El libro está especialmente destinado a estudiantes que quieran aprender algoritmos y posiblemente
