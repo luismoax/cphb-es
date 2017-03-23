@@ -28,3 +28,6 @@ contribución al hacer commit._
 
 * _Comparta este link con sus amigos de modo que crezca el número de colaboradores activos así como
 el número de entrenadores y estudiantes que usan el contenido traducido en sus entrenamientos._
+
+_Con el propósito de mantener pequeño el espacio del repositorio se quitó el archivo book.pdf. Para 
+acceder a la última versión traducida del mismo puede hacerlo [aquí](https://www.dropbox.com/sh/9yxwinmmrlwdqrq/AACzHpivuvTkmEpcnNT-r1E-a?dl=0)._
