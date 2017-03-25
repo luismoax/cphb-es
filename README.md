@@ -20,7 +20,7 @@ _Si usted desea contribuir puede hacerlo de muchas maneras:_
 Windows](http://nokyotsu.com/latex/windows.html)), abra un issue explicando la sección en la que
 está trabajando, una vez terminada, se cerraría el issue correspondiente. Pero también puede hacer
 grandes y pequeños cambios sin clonar el repositorio, ([tutorial](https://github.com/WGBH/pbucore/wiki/Contributing-to-the-project-through-Github-web-interface)
-para controbuir en un proyecto desde la interfaz web de github), o simplemente escríbanos un correo
+para contribuir en un proyecto desde la interfaz web de github), o simplemente escríbanos un correo
 con la sección traducida, se añadiría el issue correspondiente y se dejaría registro de su
 contribución al hacer commit._
 
@@ -30,4 +30,4 @@ contribución al hacer commit._
 el número de entrenadores y estudiantes que usan el contenido traducido en sus entrenamientos._
 
 _Con el propósito de mantener pequeño el espacio del repositorio se quitó el archivo book.pdf. Para 
-acceder a la última versión traducida del mismo puede hacerlo [aquí](https://www.dropbox.com/sh/9yxwinmmrlwdqrq/AACzHpivuvTkmEpcnNT-r1E-a?dl=0) o en este [otro link](https://ln.sync.com/dl/d777e9450/xmgn37t6-t388iah9-bbn28mkq-h3ixmcsi)_
+acceder a la última versión traducida del mismo puede hacerlo [aquí](https://www.dropbox.com/sh/9yxwinmmrlwdqrq/AACzHpivuvTkmEpcnNT-r1E-a?dl=0) o en este [otro link](https://ln.sync.com/dl/d777e9450/xmgn37t6-t388iah9-bbn28mkq-h3ixmcsi)._
