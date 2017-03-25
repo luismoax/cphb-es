@@ -30,4 +30,4 @@ contribución al hacer commit._
 el número de entrenadores y estudiantes que usan el contenido traducido en sus entrenamientos._
 
 _Con el propósito de mantener pequeño el espacio del repositorio se quitó el archivo book.pdf. Para 
-acceder a la última versión traducida del mismo puede hacerlo [aquí](https://www.dropbox.com/sh/9yxwinmmrlwdqrq/AACzHpivuvTkmEpcnNT-r1E-a?dl=0)._
+acceder a la última versión traducida del mismo puede hacerlo [aquí](https://www.dropbox.com/sh/9yxwinmmrlwdqrq/AACzHpivuvTkmEpcnNT-r1E-a?dl=0) o en este [otro link](https://ln.sync.com/dl/d777e9450/xmgn37t6-t388iah9-bbn28mkq-h3ixmcsi)_
