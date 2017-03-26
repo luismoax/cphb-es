@@ -124,22 +124,24 @@ El compilador sigue el est\'andar C++11 (\texttt{-std=c++11}),
 optimiza el c\'odigo (\texttt{-O2})
 y muestra advertencias de posibles errores (\texttt{-Wall}).
 
-\section{Input and output}
+\section{Entrada y salida}
 
 \index{input and output}
 
-In most contests, standard streams are used for
-reading input and writing output.
-In C++, the standard streams are
-\texttt{cin} for input and \texttt{cout} for output.
-In addition, the C functions
-\texttt{scanf} and \texttt{printf} can be used.
+En la mayor\'ia de los concursos, el flujo de entrada y salida
+est\'andares es el usado para lectura y escritura.
+En C++, el flujo de entrada est\'andar es
+\texttt{cin} y el flujo de salida est\'andar es \texttt{cout}
+\footnote{\texttt{cin}: \textbf{c}onsole \textbf{in}put.
+\texttt{cout}: \textbf{c}onsole \textbf{out}put. (N. del T.)}.
+Adem\'as, las funciones de C \texttt{scanf} y \texttt{printf}
+pueden ser usadas.
 
-The input for the program usually consists of
-numbers and strings that are separated with
-spaces and newlines.
-They can be read from the \texttt{cin} stream
-as follows:
+La entrada para un programa usualmente consiste
+de n\'umeros y cadenas de texto que est\'an separados
+por espacios y fines de l\'inea.
+Estos pueden ser le\'idos desde el flujo \texttt{cin}
+como sigue:
 
 \begin{lstlisting}
 int a, b;
