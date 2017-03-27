@@ -149,11 +149,12 @@ string x;
 cin >> a >> b >> x;
 \end{lstlisting}
 
-This kind of code always works,
-assuming that there is at least one space
-or newline between each element in the input.
-For example, the above code can read
-both the following inputs:
+Este tipo de c\'odigo siempre funciona,
+asumiendo que hay al menos un espacio
+o fin de l\'inea entre cada elemento en
+la entrada. Por ejemplo, el c\'odigo de arriba
+puede leer ambas de las siguientes entradas:
+
 \begin{lstlisting}
 123 456 monkey
 \end{lstlisting}
@@ -161,77 +162,89 @@ both the following inputs:
 123    456
 monkey
 \end{lstlisting}
-The \texttt{cout} stream is used for output
-as follows:
+El flujo \texttt{cout} es usado para la salida
+como sigue:
 \begin{lstlisting}
 int a = 123, b = 456;
 string x = "monkey";
 cout << a << " " << b << " " << x << "\n";
 \end{lstlisting}
 
-Input and output is sometimes
-a bottleneck in the program.
-The following lines at the beginning of the code
-make input and output more efficient:
+La entrada y salida es frecuentemente un cuello
+de botella en el programa. Las l\'ineas siguientes
+al principio del c\'odigo hacen la entrada y
+salida m\'as eficiente:
 
 \begin{lstlisting}
 ios_base::sync_with_stdio(0);
 cin.tie(0);
 \end{lstlisting}
 
-Note that the newline \texttt{"\textbackslash n"}
-works faster than \texttt{endl},
-because \texttt{endl} always causes
-a flush operation.
+Note que el fin de l\'inea \texttt{"\textbackslash n"}
+es m\'as r\'apido que \texttt{endl},
+ya que \texttt{endl} siempre invoca una operaci\'on
+de flush \footnote{
+% TODO: explicar flush operation y los casos en los que
+% conviene este comportamiento del endl como puede
+% ser depuraci\'on.
+}.
 
-The C functions \texttt{scanf}
-and \texttt{printf} are an alternative
-to the C++ standard streams.
-They are usually a bit faster,
-but they are also more difficult to use.
-The following code reads two integers from the input:
+Las funciones del lenguaje C \texttt{scanf}
+y \texttt{printf} son alternativas a los flujos
+est\'andares de C++.
+Normalmente estas son algo m\'as r\'apidas,
+pero tambi\'en son un poco m\'as complicadas de
+usar. El siguiente c\'odigo puede leer dos
+enteros de la entrada:
+
 \begin{lstlisting}
 int a, b;
 scanf("%d %d", &a, &b);
 \end{lstlisting}
-The following code prints two integers:
+
+El siguiente c\'odigo imprime dos enteros:
+
 \begin{lstlisting}
 int a = 123, b = 456;
 printf("%d %d\n", a, b);
 \end{lstlisting}
 
-Sometimes the program should read a whole line
-from the input, possibly containing spaces.
-This can be accomplished by using the
-\texttt{getline} function:
+Algunas veces el programa debe leer una l\'inea
+completa desde la entrada, posiblemente
+conteniendo espacios. Esto puede efectuarse
+usando la funci\'on \texttt{getline}:
 
 \begin{lstlisting}
 string s;
 getline(cin, s);
 \end{lstlisting}
 
-If the amount of data is unknown, the following
-loop is useful:
+Si la cantidad de datos a leer es desconocida, el
+siguiente ciclo es \'util:
+
 \begin{lstlisting}
 while (cin >> x) {
     // code
 }
 \end{lstlisting}
-This loop reads elements from the input
-one after another, until there is no
-more data available in the input.
 
-In some contest systems, files are used for
-input and output.
-An easy solution for this is to write
-the code as usual using standard streams,
-but add the following lines to the beginning of the code:
+Este ciclo lee elementos
+uno detr\'as de otro, mientras existan
+datos disponibles en la entrada.
+
+En algunos concursos, la entrada y salida debe
+realizarse por ficheros. Una soluci\'on simple
+para esto es escribir el c\'odigo normalmente
+usando los flujos est\'andares, pero a\~nadiendo
+las siguientes l\'ineas al principio del c\'odigo:
+
 \begin{lstlisting}
 freopen("input.txt", "r", stdin);
 freopen("output.txt", "w", stdout);
 \end{lstlisting}
-After this, the program reads the input from the file
-''input.txt'' and writes the output to the file
+
+Despu\'es de esto, el programa lee la entrada desde el
+fichero ''input.txt'' y escribe la salida al fichero
 ''output.txt''.
 
 \section{Working with numbers}
