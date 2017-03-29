@@ -247,34 +247,36 @@ Despu\'es de esto, el programa lee la entrada desde el
 fichero ''input.txt'' y escribe la salida al fichero
 ''output.txt''.
 
-\section{Working with numbers}
+\section{Trabajando con enteros}
 
 \index{integer}
 
-\subsubsection{Integers}
+\subsubsection{Enteros}
 
-The most used integer type in competitive programming
-is \texttt{int}, which is a 32-bit type with
-a value range of $-2^{31} \ldots 2^{31}-1$
-or about $-2 \cdot 10^9 \ldots 2 \cdot 10^9$.
-If the type \texttt{int} is not enough,
-the 64-bit type \texttt{long long} can be used.
-It has a value range of $-2^{63} \ldots 2^{63}-1$
-or about $-9 \cdot 10^{18} \ldots 9 \cdot 10^{18}$.
+El tipo de dato entero m\'as usado en programaci\'on
+competitiva es \texttt{int}, el cual es de
+32-bit con rango de valores $-2^{31} \ldots 2^{31}-1$
+o aproximadamente entre $-2 \cdot 10^9 \ldots 2 \cdot 10^9$.
+Si el tipo de dato \texttt{int} no es suficiente,
+el tipo de dato de 64-bit \texttt{long long} puede ser
+usado. Este tiene valores en el rango $-2^{63} \ldots 2^{63}-1$
+o aproximadamente $-9 \cdot 10^{18} \ldots 9 \cdot 10^{18}$.
 
-The following code defines a
-\texttt{long long} variable:
+El siguiente c\'odigo define una variable de tipo
+\texttt{long long}:
+
 \begin{lstlisting}
 long long x = 123456789123456789LL;
 \end{lstlisting}
-The suffix \texttt{LL} means that the
-type of the number is \texttt{long long}.
 
-A common mistake when using the type \texttt{long long}
-is that the type \texttt{int} is still used somewhere
-in the code.
-For example, the following code contains
-a subtle error:
+El sufijo \texttt{LL} significa que el tipo de dato
+del n\'umero es \texttt{long long}.
+
+Un error com\'un cuando se usa \texttt{long long}
+es que el tipo \texttt{int} siga us\'andose
+en alguna parte del c\'odigo.
+Por ejemplo, el siguiente c\'odigo contiene un error
+sutil:
 
 \begin{lstlisting}
 int a = 123456789;
@@ -282,24 +284,27 @@ long long b = a*a;
 cout << b << "\n"; // -1757895751
 \end{lstlisting}
 
-Even though the variable \texttt{b} is of type \texttt{long long},
-both numbers in the expression \texttt{a*a}
-are of type \texttt{int} and the result is
-also of type \texttt{int}.
-Because of this, the variable \texttt{b} will
-contain a wrong result.
-The problem can be solved by changing the type
-of \texttt{a} to \texttt{long long} or
-by changing the expression to \texttt{(long long)a*a}.
+A pesar de que la variable \texttt{b} es de tipo
+\texttt{long long}, ambos n\'umeros en la expresi\'on
+\texttt{a*a} son de tipo \texttt{int} y el resultado
+tambi\'en es de tipo \texttt{int}.
+Debido a esto, la variable \texttt{b} contendr\'a
+un resultado incorrecto. Este problema puede ser
+resuelto cambiando el tipo de \texttt{a}
+para \texttt{long long}
+o reescribiendo la expresi\'on como \texttt{(long long)a*a}.
 
-Usually contest problems are set so that the
-type \texttt{long long} is enough.
-Still, it is good to know that
-the \texttt{g++} compiler also provides
-a 128-bit type \texttt{\_\_int128\_t}
-with a value range of
-$-2^{127} \ldots 2^{127}-1$ or about $-10^{38} \ldots 10^{38}$.
-However, this type is not available in all contest systems.
+En concursos usualmente los problemas
+son dise\~nados de modo que con el tipo
+\texttt{long long} sea suficiente.
+Incluso as\'i, es bueno conocer que el compilador
+\texttt{g++} tambi\'en provee
+un tipo de 128-bit \texttt{\_\_int128\_t}
+con valores en el rango
+$-2^{127} \ldots 2^{127}-1$ o aproximadamente
+$-10^{38} \ldots 10^{38}$.
+Sin embargo, este tipo no siempre est\'a disponible
+en todos los entornos.
 
 \subsubsection{Modular arithmetic}
 
