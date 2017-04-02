@@ -374,26 +374,25 @@ Pero esto solo es necesario si hay
 operaciones de sustracci\'on en el c\'odigo
 y el resto puede quedar negativo.
 
-\subsubsection{Floating point numbers}
+\subsubsection{N\'umeros de punto flotante}
 
 \index{floating point number}
 
-The usual floating point types in
-competitive programming are
-the 64-bit \texttt{double}
-and, as an extension in the \texttt{g++} compiler,
-the 80-bit \texttt{long double}.
-In most cases, \texttt{double} is enough,
-but \texttt{long double} is more accurate.
+Los tipos de datos de punto flotante usuales
+en programaci\'on competitiva son
+\texttt{double} de 64-bit y, como una extensi\'on
+en el compilador \texttt{g++}, \texttt{long double}
+de 80-bit. En la mayor\'ia de los casos, \texttt{double}
+es suficiente, sin embargo\texttt{long double} es m\'as
+preciso.
 
-The required precision of the answer
-is usually given in the problem statement.
-An easy way to output the answer is to use
-the \texttt{printf} function
-and give the number of decimal places
-in the formatting string.
-For example, the following code prints
-the value of $x$ with 9 decimal places:
+La precisi\'on requerida de la soluci\'on
+normalmente es dada en la descripci\'on del problema.
+Una manera f\'acil de imprimir la respuesta
+es usando la funci\'on \texttt{printf} con el n\'umero
+de lugares decimales en la cadena de formato.
+Por ejemplo, el siguiente c\'odigo imprime
+el valor de $x$ con 9 d\'igitos despu\'es de la coma:
 
 \begin{lstlisting}
 printf("%.9f\n", x);
