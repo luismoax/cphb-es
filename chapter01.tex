@@ -390,8 +390,11 @@ La precisi\'on requerida de la soluci\'on
 normalmente es dada en la descripci\'on del problema.
 Una manera f\'acil de imprimir la respuesta
 es usando la funci\'on \texttt{printf} con el n\'umero
-de lugares decimales en la cadena de formato.
-Por ejemplo, el siguiente c\'odigo imprime
+de lugares decimales en la cadena de formato\footnote{Tambi\'en
+puede hacerse con \texttt{cout}
+especificando primero los lugares despu\'es de la coma con las
+siguientes instrucciones: \texttt{cout.precision(5); cout << fixed;}
+(N. del T.)}. Por ejemplo, el siguiente c\'odigo imprime
 el valor de $x$ con 9 d\'igitos despu\'es de la coma:
 
 \begin{lstlisting}
