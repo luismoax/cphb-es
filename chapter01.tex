@@ -401,33 +401,33 @@ el valor de $x$ con 9 d\'igitos despu\'es de la coma:
 printf("%.9f\n", x);
 \end{lstlisting}
 
-A difficulty when using floating point numbers
-is that some numbers cannot be represented
-accurately as floating point numbers,
-and there will be rounding errors.
-For example, the result of the following code
-is surprising:
+La dificultad cuando se usan n\'umeros con coma
+flotante es que algunos valores no pueden
+ser representados exactamente, y existir\'an
+errores de redondeo.
+Por ejemplo, el resultado del siguiente c\'odigo
+es sorprendente:
 
 \begin{lstlisting}
 double x = 0.3*3+0.1;
 printf("%.20f\n", x); // 0.99999999999999988898
 \end{lstlisting}
 
-Due to a rounding error,
-the value of \texttt{x} is a bit smaller than 1,
-while the correct value would be 1.
+Debido al error de redondeo, el valor de
+\texttt{x} es un poco menor que 1,
+mientras que el valor correcto ser\'ia 1.
 
-It is risky to compare floating point numbers
-with the \texttt{==} operator,
-because it is possible that the values should be
-equal but they are not because of precision errors.
-A better way to compare floating point numbers
-is to assume that two numbers are equal
-if the difference between them is less than $\varepsilon$,
-where $\varepsilon$ is a small number.
+Es peligroso comparar n\'umeros de coma flotante
+con el operador \texttt{==}, pues es posible
+que los valores deban ser iguales pero no lo
+sean debido a errores de precisi\'on.
+Una mejor manera de comparar dos de estos n\'umeros
+es asumiendo que son iguales si la diferencia
+entre ellos es menor que $\varepsilon$,
+donde $\varepsilon$ es un valor bien peque\~no.
 
-In practice, the numbers can be compared
-as follows ($\varepsilon=10^{-9}$):
+En la pr\'actica, pueden ser comparados como
+sigue ($\varepsilon=10^{-9}$):
 
 \begin{lstlisting}
 if (abs(a-b) < 1e-9) {
@@ -435,12 +435,13 @@ if (abs(a-b) < 1e-9) {
 }
 \end{lstlisting}
 
-Note that while floating point numbers are inaccurate,
-integers up to a certain limit can still be
-represented accurately.
-For example, using \texttt{double},
-it is possible to accurately represent all
-integers whose absolute value is at most $2^{53}$.
+Note que mientras los n\'umeros reales son algo
+imprecisos en la computadora, los enteros hasta cierto
+rango son representados con precisi\'on.
+Por ejemplo, usando \texttt{double},
+es posible representar de forma precisa
+todos los enteros con valor absoluto
+hasta $2^{53}$.
 
 \section{Shortening code}
 
